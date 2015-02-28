@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Hola mundo</title>
+  </head>
+  <body>
+    <h1>Esto es una página con estilo CSS2</h1>
+    <p>Se ha linkado utilizando la función url_for</p>
+  </body>
+</html>
