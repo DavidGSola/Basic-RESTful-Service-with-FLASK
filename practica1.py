@@ -18,7 +18,7 @@ def api_imagen():
 
 @app.route('/hola_pepe')
 def api_pepe():
-	return render_template('hola_pepe.html')
+	return 'Hola <b> pepe</b>'
 
 @app.route('/pagina')
 def api_pagina():
