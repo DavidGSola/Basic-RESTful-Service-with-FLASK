@@ -53,5 +53,10 @@ docs/_build/
 # PyBuilder
 target/
 
-#Vagrant
+# Vagrant
 Vagrantfile*
+.vagrant
+
+# Temp
+*.*~
+.gitignore~
