@@ -26,25 +26,15 @@ def api_pagina():
 
 @app.route('/circulos_varios')
 def api_circulos():
-	cx_random1 = random.randint(50, 100)
-	cy_random1 = random.randint(50, 100)
-	r_random1 = random.randint(20, 50)
-
-	cx_random2 = random.randint(50, 100)
-	cy_random2 = random.randint(50, 100)
-	r_random2 = random.randint(20, 50)
-
-	cx_random3 = random.randint(50, 100)
-	cy_random3 = random.randint(50, 100)
-	r_random3 = random.randint(20, 50)
+	randoms = [random.randrange(50,200) for i in range(9)]
 
 	return 	'''
-			<svg height="200" width="200"> 
+			<svg height="500" width="500"> 
 				<circle cx="%s" cy="%s" r="%s" stroke="black" stroke-width="3" fill="red" /> 
 				<circle cx="%s" cy="%s" r="%s" stroke="white" stroke-width="3" fill="blue" /> 
 				<circle cx="%s" cy="%s" r="%s" stroke="black" stroke-width="3" fill="green" /> 
 			</svg> 
-			''' % (cx_random1, cy_random1, r_random1, cx_random2, cy_random2, r_random2, cx_random3, cy_random3, r_random3)
+			''' % (randoms[0],randoms[1],randoms[2],randoms[3],randoms[4],randoms[5],randoms[6],randoms[7],randoms[8])
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0')
